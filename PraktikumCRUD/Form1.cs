@@ -32,5 +32,9 @@ namespace PraktikumCRUD
 
             txtNIM.Focus();
         }
+        private void LoadData()
+        {
+
+        }
     }
 }
