@@ -145,7 +145,7 @@ namespace PraktikumCRUD
         }
         private void BtnRefresh(object sender, EventArgs e)
         {
-
+            LoadData();
         }
     }
 }
