@@ -22,5 +22,9 @@ namespace PraktikumCRUD
         {
             LoadData(); 
         }
+        private void ClearForm()
+        {
+
+        }
     }
 }
