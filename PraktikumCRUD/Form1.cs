@@ -50,6 +50,10 @@ namespace PraktikumCRUD
 
                     ClearForm();
                 }
+                catch (Exception ex)
+                {
+
+                }
 
             }
         }
