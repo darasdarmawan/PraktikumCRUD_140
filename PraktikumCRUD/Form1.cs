@@ -78,6 +78,8 @@ namespace PraktikumCRUD
                         cmd.Parameters.AddWithValue("@Nama", txtNama.Text.Trim());
                         cmd.Parameters.AddWithValue("@Email", txtEmail.Text.Trim());
                         cmd.Parameters.AddWithValue("@Telepon", txtTelepon.Text.Trim());
+                        cmd.Parameters.AddWithValue("@Alamat", txtAlamat.Text.Trim());
+
                     } 
                 }
             }
