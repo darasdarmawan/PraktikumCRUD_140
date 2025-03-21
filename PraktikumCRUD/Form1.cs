@@ -47,6 +47,8 @@ namespace PraktikumCRUD
                     
                     dgvMahasiswa.AutoGenerateColumns = true;
                     dgvMahasiswa.DataSource = dt;
+
+                    ClearForm();
                 }
 
             }
