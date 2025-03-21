@@ -40,6 +40,7 @@ namespace PraktikumCRUD
                 try
                 {
                     conn.Open();
+                    string query = "SELECT NIM AS [NIM], Nama, Email, Telepon, Alamat FROM Mahasiswa";
                 }
             }
         }
