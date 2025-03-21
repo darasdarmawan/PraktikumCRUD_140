@@ -15,7 +15,8 @@ namespace PraktikumCRUD
         private string connectionString = "Data Source=DESKTOP-ALRV9CU\\DARADARMAWAN;Initial Catalog=OrganisasiMahasiswa;Intergrated Security=True";
         public Form1()
         {
-        
+            InitializeComponent();
+
         }
     }
 }
