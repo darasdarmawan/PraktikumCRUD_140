@@ -28,6 +28,7 @@ namespace PraktikumCRUD
             txtNama.Clear();
             txtEmail.Clear();
             txtTelepon.Clear();
+            txtAlamat.Clear();
         }
     }
 }
