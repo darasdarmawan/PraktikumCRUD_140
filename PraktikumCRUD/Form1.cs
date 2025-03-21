@@ -29,6 +29,8 @@ namespace PraktikumCRUD
             txtEmail.Clear();
             txtTelepon.Clear();
             txtAlamat.Clear();
+
+            txtNIM.Focus();
         }
     }
 }
