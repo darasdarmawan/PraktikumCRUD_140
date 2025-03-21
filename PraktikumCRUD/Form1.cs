@@ -107,13 +107,17 @@ namespace PraktikumCRUD
                 DialogResult confirm = MessageBox.Show("Yakin ingin menghapus data ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (confirm == DialogResult.Yes)
                 {
-                    using (SqlCommand cmd = new SqlCommand(connectionString))
+                    using (SqlCommand conn = new SqlCommand(connectionString))
                     {
                         try
                         {
                             string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
                             conn.Open();
                             string query = "DELETE FROM Mahasiswa WHERE NIM = @NIM";
+                            using (SqlCommand cmd = new SqlCommand(query, conn))
+                            {
+                                cmd.Parameters.AddWithValue("@NIM", nim);
+                            }
                         }
                     }
                 }
