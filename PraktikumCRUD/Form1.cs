@@ -61,7 +61,13 @@ namespace PraktikumCRUD
         {
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
+                try
+                {
+                    if (txtNIM.Text == "" || txtNama.Text == "" || txtEmail.Text == "" || txtTelepon.Text == "")
+                    {
 
+                    }
+                }
             }
         }
     }
