@@ -85,7 +85,7 @@ namespace PraktikumCRUD
                         {
                             MessageBox.Show("Data berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                             LoadData();
-
+                            ClearForm();
                         }
 
                     } 
