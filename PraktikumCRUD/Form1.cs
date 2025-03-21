@@ -100,5 +100,9 @@ namespace PraktikumCRUD
                 }
             }
         }
+        private void BtnHapus(object sender, EventArgs e)
+        {
+
+        }
     }
 }
