@@ -57,5 +57,9 @@ namespace PraktikumCRUD
 
             }
         }
+        private void BtnTambah(object sender, EventArgs e)
+        {
+
+        }
     }
 }
