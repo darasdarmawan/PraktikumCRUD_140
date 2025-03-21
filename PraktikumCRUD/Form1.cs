@@ -107,7 +107,7 @@ namespace PraktikumCRUD
                 DialogResult confirm = MessageBox.Show("Yakin ingin menghapus data ini?", "Konfirmasi", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                 if (confirm == DialogResult.Yes)
                 {
-                    using (SqlCommand conn = new SqlCommand(connectionString))
+                    using (SqlConnection conn = new SqlConnection(connectionString))
                     {
                         try
                         {
@@ -117,6 +117,7 @@ namespace PraktikumCRUD
                             using (SqlCommand cmd = new SqlCommand(query, conn))
                             {
                                 cmd.Parameters.AddWithValue("@NIM", nim);
+                                int rowsAffected = cmd.ExecuteNonQuery();
                             }
                         }
                     }
