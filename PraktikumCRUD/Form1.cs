@@ -25,6 +25,7 @@ namespace PraktikumCRUD
         private void ClearForm()
         {
             txtNIM.Clear();
+            txtNama.Clear();
         }
     }
 }
