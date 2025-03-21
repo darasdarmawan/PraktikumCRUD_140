@@ -109,7 +109,10 @@ namespace PraktikumCRUD
                 {
                     using (SqlCommand cmd = new SqlCommand(connectionString))
                     {
-
+                        try
+                        {
+                            string nim = dgvMahasiswa.SelectedRows[0].Cells["NIM"].Value.ToString();
+                        }
                     }
                 }
             }
