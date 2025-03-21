@@ -68,6 +68,8 @@ namespace PraktikumCRUD
                         MessageBox.Show("Harap isi semua data!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         return;
                     }
+
+                    conn.Open();
                 }
             }
         }
