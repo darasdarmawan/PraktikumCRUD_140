@@ -26,6 +26,7 @@ namespace PraktikumCRUD
         {
             txtNIM.Clear();
             txtNama.Clear();
+            txtEmail.Clear();
         }
     }
 }
